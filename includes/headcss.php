@@ -7,7 +7,7 @@
 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
 <!-- Theme CSS -->
-
+<link href="../css/custom-css.css" rel="stylesheet">
 
 <!-- Custom Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
