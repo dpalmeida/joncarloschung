@@ -1,9 +1,13 @@
+/************
+HOME
+************/
 
 section#home{
 	height:100vh;
 	background:url(../img/jonbg.jpg) no-repeat fixed center;
 	background-size: cover;
 }
+
 div#home-container{
 	position: relative;
 	top: 50%;
@@ -32,4 +36,59 @@ div#desc{
 	display:inline-block;
 	vertical-align:middle;
 	max-width:405px;
+}
+
+/************
+PORTFOLIO
+************/
+
+
+section#portfolio{
+	height:100vh;
+	padding: 50px 0px;
+	background:#000 no-repeat fixed center;
+	background-size: cover;
+}
+
+.fittobox {                /* give fit to box an aspect ratio */
+    display: inline-block; /* let it be styled thusly */
+    padding: 0;            /* get rid of pre-styling */
+    margin: 0;
+	width: 50%;          /* take up full width available */
+    padding-top: 56.25%;   /* give aspect ratio of 16:9; "720 / 1280 = 0.5625" */
+    height: 0px;           /* don't want it to expand beyond padding */
+    position: relative;    /* allow for absolute positioning of child elements */
+	left:25%;
+}
+
+.fittobox > iframe {
+    position: absolute;    /* expand to fill */
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+	width: 100%;
+	height: 50%;
+}
+
+#resumebtn{
+	float:right;
+	border-width: 2px;
+	font-family: Avenir;
+	font-size: 12px;
+	line-height:13px;
+	/* background: rgb(6,102,33); */
+	border-radius:0px;
+	color: #ffffff;
+	border-color:rgba(0,0,0,0);
+}
+
+
+/************
+CONTACT
+************/
+section#contact{
+	height:100vh;
+	background:url(../img/jonbg_flipped.jpg) no-repeat fixed center;
+	background-size: cover;
 }

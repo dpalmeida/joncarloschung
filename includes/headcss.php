@@ -6,6 +6,9 @@
 <!-- AOS CSS -->
 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
+<!-- Onepage CSS -->
+<!--<link href="../vendor/onepage-scroll-master/onepage-scroll.css" rel="stylesheet">-->
+
 <!-- Theme CSS -->
 <link href="../css/custom-css.css" rel="stylesheet">
 
