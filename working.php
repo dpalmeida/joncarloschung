@@ -12,6 +12,47 @@
 
 	<?php include "./includes/headcss.php";?>
 	<?php include "./includes/footjs.php";?>
+	<?php
+		if (isset($_POST["submit"])) {
+			$name = $_POST['name'];
+			$email = $_POST['email'];
+			$message = $_POST['message'];
+			$human = intval($_POST['human']);
+			$from = 'joncarloschung.com Contact Form'; 
+			$to = 'dylan.p.almeida@gmail.com'; 
+			$subject = 'Message from: '.$name;
+			
+			$body = "\n From: $name\n Email: $email\n Message:\n $message";
+	 
+			// Check if name has been entered
+			if (!$_POST['name']) {
+				$errName = 'Please enter your name';
+			}
+			
+			// Check if email has been entered and is valid
+			if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+				$errEmail = 'Please enter a valid email address';
+			}
+			
+			//Check if message has been entered
+			if (!$_POST['message']) {
+				$errMessage = 'Please enter your message';
+			}
+			//Check if simple anti-bot test is correct
+			if ($human !== 5) {
+				$errHuman = 'Your anti-spam is incorrect';
+			}
+	 
+	// If there are no errors, send the email
+	if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
+		if (mail ($to, $subject, $body, $from)) {
+			$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
+		} else {
+			$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
+		}
+	}
+		}
+	?>
 </head>
 
 <body id="page-top" class="index">
@@ -37,26 +78,53 @@
 			</div>
 		</section>	
 		<section id="contact">
-			
+			<div class="row" id="contact-content">
+				<div class="offset-md-4 col-4 contact-info">
+					<span id="phone">phone: (267)-885-8652</span><br/>
+					<span id="email">email: <a href="mailto:joncchung@gmail.com">joncchung@gmail.com</a></span><br/>
+					<span id="linkedin">linkedin: <a href="https://www.linkedin.com/in/jonathan-chung-3845a8114/">jonathan-chung-3845a8114/</a></span><br/>
+					<span id="twitter">twitter: <a href="https://twitter.com/JonCarlosIII">@JonCarlosIII</a></span><br/>
+				</div>
+				<div class="offset-md-4 col-4 ">
+					<form class="form-horizontal" role="form" method="post" action="working.php">
+						<div class="form-group">
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="name" name="name" placeholder="Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+								<?php echo "<p class='text-danger'>$errName</p>";?>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-10">
+								<input type="email" class="form-control" id="email" name="email" placeholder="Email" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+								<?php echo "<p class='text-danger'>$errEmail</p>";?>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-10">
+								<textarea class="form-control" rows="4" name="message" placeholder="Message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
+								<?php echo "<p class='text-danger'>$errMessage</p>";?>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="human" name="human" placeholder="Anti-bot: 2 + 3 = ?">
+								<?php echo "<p class='text-danger'>$errHuman</p>";?>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-10 col-sm-offset-2">
+								<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-10 col-sm-offset-2">
+								<?php echo $result; ?>	
+							</div>
+						</div>
+					</form> 
+				</div>
+			</div>
 		</section>
 	</div>
 </body>
-	<script>
-		$(".main").onepage_scroll({
-		   sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
-		   easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
-											// "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
-		   animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
-		   pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
-		   updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
-		   beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
-		   afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
-		   loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
-		   keyboard: true,                  // You can activate the keyboard controls
-		   responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
-											// you want the responsive fallback to be triggered. For example, set this to 600 and whenever
-											// the browser's width is less than 600, the fallback will kick in.
-		   direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
-		});
-	</script>
 </html>

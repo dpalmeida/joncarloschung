@@ -91,4 +91,16 @@ section#contact{
 	height:100vh;
 	background:url(../img/jonbg_flipped.jpg) no-repeat fixed center;
 	background-size: cover;
+	padding-top:50px;
+}
+
+#contact-content{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%); 
+}
+
+div.contact-info{
+	color:#fff;
+	text-align:left;
 }
