@@ -83,41 +83,41 @@
 					<span id="phone">phone: (267)-885-8652</span><br/>
 					<span id="email">email: <a href="mailto:joncchung@gmail.com">joncchung@gmail.com</a></span><br/>
 					<span id="linkedin">linkedin: <a href="https://www.linkedin.com/in/jonathan-chung-3845a8114/">jonathan-chung-3845a8114/</a></span><br/>
-					<span id="twitter">twitter: <a href="https://twitter.com/JonCarlosIII">@JonCarlosIII</a></span><br/>
+					<span id="twitter">twitter: @<a href="https://twitter.com/JonCarlosIII">JonCarlosIII</a></span><br/>
 				</div>
 				<div class="offset-md-4 col-4 ">
 					<form class="form-horizontal" role="form" method="post" action="working.php">
 						<div class="form-group">
-							<div class="col-sm-10">
+							<div class="col-sm-12">
 								<input type="text" class="form-control" id="name" name="name" placeholder="Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
 								<?php echo "<p class='text-danger'>$errName</p>";?>
 							</div>
 						</div>
 						<div class="form-group">
-							<div class="col-sm-10">
+							<div class="col-sm-12">
 								<input type="email" class="form-control" id="email" name="email" placeholder="Email" value="<?php echo htmlspecialchars($_POST['email']); ?>">
 								<?php echo "<p class='text-danger'>$errEmail</p>";?>
 							</div>
 						</div>
 						<div class="form-group">
-							<div class="col-sm-10">
+							<div class="col-sm-12">
 								<textarea class="form-control" rows="4" name="message" placeholder="Message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
 								<?php echo "<p class='text-danger'>$errMessage</p>";?>
 							</div>
 						</div>
 						<div class="form-group">
-							<div class="col-sm-10">
+							<div class="col-sm-12">
 								<input type="text" class="form-control" id="human" name="human" placeholder="Anti-bot: 2 + 3 = ?">
 								<?php echo "<p class='text-danger'>$errHuman</p>";?>
 							</div>
 						</div>
 						<div class="form-group">
-							<div class="col-sm-10 col-sm-offset-2">
+							<div class="col-sm-12">
 								<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
 							</div>
 						</div>
 						<div class="form-group">
-							<div class="col-sm-10 col-sm-offset-2">
+							<div class="col-sm-12">
 								<?php echo $result; ?>	
 							</div>
 						</div>
