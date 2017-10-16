@@ -1,7 +1,7 @@
 <!-- JavaScript -->
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>	
 
@@ -11,6 +11,3 @@
 <!-- Plugins -->
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <!--<script src="../vendor/onepage-scroll-master/jquery.onepage-scroll.js"></script>-->
-
-<!-- Theme JavaScript -->
-

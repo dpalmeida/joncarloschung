@@ -58,13 +58,23 @@
 <body id="page-top" class="index">
 	<div class="main">
 		<section id="home">
-			<div id="home-container" class="offset-md-3 col-md-6">
+			<?php echo $result; ?>
+			<div id="home-container" class="offset-md-3 col-md-6 offset-sm-1 col-sm-10">
 				<div id="name"><span>JONATHAN CHUNG</span></div>
 				<div class="row" id="sub-desc">
 					<div id="desc-container">
-						<img src="http://via.placeholder.com/125x125">
+						<img src="http://via.placeholder.com/100x100">
 						<div class="col" id="desc">Hi, my name is Jon and I'm a game developer and programmer from PA with a B.S. in Emerging Media: Computation. I program in C++, C#, Java, and Python and have made games in Unreal Engine and Unity. In my free time, I enjoy content creation and playing DnD.</div>
 					</div>
+				</div>
+				<div class="row" id="home-nav">
+					<div id="home-nav-container" class="page-scroll">
+						<a href="#portfolio" id="a-portfolio"><button class="btn btn-primary home-nav-btn" type="button" aria-haspopup="true">PORTFOLIO</button></a>
+						<a href="#contact" id="a-contact"><button class="btn btn-primary home-nav-btn" type="button" aria-haspopup="true">CONTACT</button></a>
+					</div>
+				</div>
+				<div class="page-scroll" id="nav-arrow">
+					<a href="#portfolio"><img src="http://via.placeholder.com/50x50"></a>
 				</div>
 			</div>
 		</section>
@@ -116,15 +126,12 @@
 								<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
 							</div>
 						</div>
-						<div class="form-group">
-							<div class="col-sm-12">
-								<?php echo $result; ?>	
-							</div>
-						</div>
 					</form> 
 				</div>
 			</div>
 		</section>
 	</div>
+	<!-- Theme JavaScript -->
+	<script src="../js/custom.js"></script>
 </body>
 </html>

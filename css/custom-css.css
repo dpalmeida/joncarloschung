@@ -18,13 +18,13 @@ div#sub-desc{
 }
 
 #desc-container{
-	width: 560px;
+	width: 630px;
     margin: auto;
-    padding-left: 20px;
+    padding-left: 36px;
 }
 
 div#name{
-	font-size:60px;
+	font-size:64px;
 	color:#fff;
 	text-align:center;
 	margin-bottom:15px;
@@ -35,7 +35,51 @@ div#desc{
 	text-align:justify;
 	display:inline-block;
 	vertical-align:middle;
-	max-width:405px;
+	max-width:465px;
+}
+
+div#home-nav{
+	padding-top:30px;
+}
+
+.home-nav-btn{
+	color:#fff;
+	background:none;
+	border: 0 none;
+	font-size:20px;
+}
+
+#home-nav-container{
+	width: 630px;
+    margin: auto;
+    padding-left: 20px;
+}
+.home-nav-btn.btn:focus, .home-nav-btn.btn:active:focus, .home-nav-btn.btn.active:focus {
+	outline: 0 none;
+}
+
+.home-nav-btn.btn-primary:hover, .home-nav-btn.btn-primary:focus, .home-nav-btn.btn-primary:active, .home-nav-btn.btn-primary.active{
+	background: none;
+	color:#fff;
+	box-shadow: none;
+	cursor: pointer;
+}
+
+a#a-portfolio{
+	text-align:center;
+	left:20%;
+	position:relative;
+}
+a#a-contact{
+	text-align:center;
+	left:22%;
+	position:relative;
+}
+
+#nav-arrow{
+	margin-top:5%;
+	left:45%;
+	position:absolute;
 }
 
 /************
