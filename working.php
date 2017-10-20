@@ -60,10 +60,10 @@
 		<section id="home">
 			<?php echo $result; ?>
 			<div id="home-container" class="offset-md-3 col-md-6 offset-sm-1 col-sm-10">
-				<div id="name"><span>JONATHAN CHUNG</span></div>
+				<div id="name"><img src="./img/name.png"></img></div>
 				<div class="row" id="sub-desc">
 					<div id="desc-container">
-						<img src="http://via.placeholder.com/100x100">
+						<img src="http://via.placeholder.com/104x104">
 						<div class="col" id="desc">Hi, my name is Jon and I'm a game developer and programmer from PA with a B.S. in Emerging Media: Computation. I program in C++, C#, Java, and Python and have made games in Unreal Engine and Unity. In my free time, I enjoy content creation and playing DnD.</div>
 					</div>
 				</div>
@@ -74,13 +74,13 @@
 					</div>
 				</div>
 				<div class="page-scroll" id="nav-arrow">
-					<a href="#portfolio"><img src="http://via.placeholder.com/50x50"></a>
+					<a href="#portfolio"><img src="./img/arrows.png"></a>
 				</div>
 			</div>
 		</section>
 		<section id="portfolio">
 			<div class="offset-md-1 col-md-10 col-sm-12">
-				<a href="#"><button class="btn btn-primary" type="button" aria-haspopup="true" id="resumebtn">RESUME</button></a>
+				<a href="./docs/resume.pdf"><button class="btn btn-primary custom-btn" type="button" aria-haspopup="true" id="resumebtn">RESUME</button></a>
 				<div class="fittobox">
 					<iframe src="https://player.vimeo.com/video/231487647" width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 				</div>
@@ -89,29 +89,31 @@
 		</section>	
 		<section id="contact">
 			<div class="row" id="contact-content">
-				<div class="offset-md-4 col-4 contact-info">
+				<div class="offset-md-4 col-md-4 col-sm-12 contact-info">
 					<span id="phone">phone: (267)-885-8652</span><br/>
 					<span id="email">email: <a href="mailto:joncchung@gmail.com">joncchung@gmail.com</a></span><br/>
 					<span id="linkedin">linkedin: <a href="https://www.linkedin.com/in/jonathan-chung-3845a8114/">jonathan-chung-3845a8114/</a></span><br/>
 					<span id="twitter">twitter: @<a href="https://twitter.com/JonCarlosIII">JonCarlosIII</a></span><br/>
 				</div>
-				<div class="offset-md-4 col-4 ">
+			</div>
+			<div class="row" id="contact-form">
+				<div class="offset-md-4 col-md-4 col-sm-12">
 					<form class="form-horizontal" role="form" method="post" action="working.php">
 						<div class="form-group">
 							<div class="col-sm-12">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+								<input type="text" class="form-control" id="name" name="name" placeholder="NAME" value="<?php echo htmlspecialchars($_POST['name']); ?>">
 								<?php echo "<p class='text-danger'>$errName</p>";?>
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="col-sm-12">
-								<input type="email" class="form-control" id="email" name="email" placeholder="Email" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+								<input type="email" class="form-control" id="email" name="email" placeholder="EMAIL" value="<?php echo htmlspecialchars($_POST['email']); ?>">
 								<?php echo "<p class='text-danger'>$errEmail</p>";?>
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="col-sm-12">
-								<textarea class="form-control" rows="4" name="message" placeholder="Message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
+								<textarea class="form-control" rows="4" name="message" placeholder="MESSAGE"><?php echo htmlspecialchars($_POST['message']);?></textarea>
 								<?php echo "<p class='text-danger'>$errMessage</p>";?>
 							</div>
 						</div>
@@ -123,7 +125,7 @@
 						</div>
 						<div class="form-group">
 							<div class="col-sm-12">
-								<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+								 <div class="btn btn-primary custom-btn" id="submit" name="submit" type="submit"></div>
 							</div>
 						</div>
 					</form> 

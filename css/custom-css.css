@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('AvenirLTStd-Light.otf'); /* File to be stored at your site */
+  }
+
 /************
 HOME
 ************/
@@ -30,6 +35,7 @@ div#name{
 	margin-bottom:15px;
 }
 div#desc{
+	font-family:Avenir;
 	font-size:16px;
 	color:#fff;
 	text-align:justify;
@@ -43,10 +49,12 @@ div#home-nav{
 }
 
 .home-nav-btn{
+	font-family:Avenir;
+	font-size:20px;
 	color:#fff;
+	font-weight:500;
 	background:none;
 	border: 0 none;
-	font-size:20px;
 }
 
 #home-nav-container{
@@ -60,7 +68,7 @@ div#home-nav{
 
 .home-nav-btn.btn-primary:hover, .home-nav-btn.btn-primary:focus, .home-nav-btn.btn-primary:active, .home-nav-btn.btn-primary.active{
 	background: none;
-	color:#fff;
+	color:#28BACD;
 	box-shadow: none;
 	cursor: pointer;
 }
@@ -77,7 +85,7 @@ a#a-contact{
 }
 
 #nav-arrow{
-	margin-top:5%;
+	margin-top:12%;
 	left:45%;
 	position:absolute;
 }
@@ -115,16 +123,22 @@ section#portfolio{
 	height: 50%;
 }
 
-#resumebtn{
-	float:right;
+.custom-btn{
 	border-width: 2px;
-	font-family: Avenir;
-	font-size: 12px;
+	font-family: 'Bungee Inline', cursive;
+	font-size: 18px;
+	height:46px;
+	width:146px;
 	line-height:13px;
-	/* background: rgb(6,102,33); */
 	border-radius:0px;
-	color: #ffffff;
+	color: #fff;
+	background: #28BACD;
 	border-color:rgba(0,0,0,0);
+	cursor: pointer;
+}
+
+.custom-btn#resumebtn{
+	float:right;
 }
 
 
@@ -132,16 +146,20 @@ section#portfolio{
 CONTACT
 ************/
 section#contact{
-	height:100vh;
+	min-height:100vh;
 	background:url(../img/jonbg_flipped.jpg) no-repeat fixed center;
 	background-size: cover;
-	padding-top:50px;
+	padding-top:10%;
 }
 
 #contact-content{
 	position: relative;
 	top: 50%;
-	transform: translateY(-50%); 
+	margin:0px;
+}
+
+#contact-form{
+	position: relative;
 	margin:0px;
 }
 
@@ -150,7 +168,19 @@ div.contact-info{
 	text-align:left;
 	padding-bottom: 35px;
 	padding-left:30px;
+	font-family:Avenir;
+	font-size:16px;
+}
+.custom-btn#submit{
+	background:url(../img/send.png) #28BACD;
+	background-position: -9px -7px;
+    background-repeat: no-repeat;
+    background-size: 39px 43px;
+}
+.form-control{
+	font-family:Avenir;
+	font-size:16px;
 }
 
-span > a:link, span > a:visited { color:#ffffff; text-decoration: underline; }
-span > a:hover, span > a:active { color:#ffffff; text-decoration: none; }
+span > a:link, span > a:visited { color:#ffffff; text-decoration: none; }
+span > a:hover, span > a:active { color:#ffffff; text-decoration: underline; }
