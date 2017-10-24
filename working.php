@@ -64,7 +64,7 @@
 				<div class="row" id="sub-desc">
 					<div id="desc-container">
 						<img id="home-img" src="img/home_img.jpg">
-						<div class="col" id="desc">Hi, my name is Jon and I'm a game developer and programmer from PA with a B.S. in Emerging Media: Computation. I program in C++, C#, Java, and Python and have made games in Unreal Engine and Unity. In my free time, I enjoy content creation and playing DnD.</div>
+						<div class="col" id="desc">Hi, my name is Jon and I'm a game developer and programmer from PA with a B.S. in Emerging Media: Computation. I program in C++, C#, Java, and Python and have made games in Unreal Engine and Unity. In my free time, I enjoy content creation and playing D&amp;D.</div>
 					</div>
 				</div>
 				<div class="row" id="home-nav">
@@ -79,12 +79,37 @@
 			</div>
 		</section>
 		<section id="portfolio">
-			<div class="offset-md-1 col-md-10 col-sm-12">
-				<a href="./docs/resume.pdf"><button class="btn btn-primary custom-btn" type="button" aria-haspopup="true" id="resumebtn">RESUME</button></a>
+			<div class="offset-md-3 col-md-6 col-sm-12" id="portfolio-container">
+				<div id="resumebtn-div">
+					<a href="./docs/resume.pdf"><button class="btn btn-primary custom-btn" type="button" aria-haspopup="true" id="resumebtn">RESUME</button></a>
+				</div>
 				<div class="fittobox">
 					<iframe src="https://player.vimeo.com/video/231487647" width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 				</div>
-				<!--<div><i class="fa fa-download fa-4x" aria-hidden="true"></i></div>-->
+				<div class="row dl-links">
+					<div class="col-md-6 col-sm-12">
+						<div class="dl-icon"><i class="fa fa-download fa-3x" aria-hidden="true"></i></div>
+						<div class="dl-title">LABYRINTH</div>
+						<div class="dl-desc">BLANK<span class="dl-programs"> - UNREAL &amp; MAYA 3D</span></div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<div class="dl-icon"><i class="fa fa-download fa-3x" aria-hidden="true"></i></div>
+						<div class="dl-title">SUPER CELLPHONE SIMULATOR 64</div>
+						<div class="dl-desc">LEAD PROGRAMMER<span class="dl-programs"> - UNITY</span></div>
+					</div>
+				</div>				
+				<div class="row dl-links">
+					<div class="col-md-6 col-sm-12">
+						<div class="dl-icon"><i class="fa fa-download fa-3x" aria-hidden="true"></i></div>
+						<div class="dl-title">ROGUE'S QUEST</div>
+						<div class="dl-desc">LEAD PROGRAMMER<span class="dl-programs"> - UNREAL &amp; MAYA 3D</span></div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<div class="dl-icon"><i class="fa fa-download fa-3x" aria-hidden="true"></i></div>
+						<div class="dl-title">A CRUEL TWIST OF SHAPE</div>
+						<div class="dl-desc">LEAD DESIGNER<span class="dl-programs"> - GAME MAKER</span></div>
+					</div>
+				</div>
 			</div>
 		</section>	
 		<section id="contact">
