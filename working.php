@@ -59,11 +59,11 @@
 	<div class="main">
 		<section id="home">
 			<?php echo $result; ?>
-			<div id="home-container" class="offset-md-3 col-md-6 offset-sm-1 col-sm-10">
+			<div id="home-container">
 				<div id="name"><img src="./img/name.png"></img></div>
 				<div class="row" id="sub-desc">
 					<div id="desc-container">
-						<img src="http://via.placeholder.com/104x104">
+						<img id="home-img" src="img/home_img.jpg">
 						<div class="col" id="desc">Hi, my name is Jon and I'm a game developer and programmer from PA with a B.S. in Emerging Media: Computation. I program in C++, C#, Java, and Python and have made games in Unreal Engine and Unity. In my free time, I enjoy content creation and playing DnD.</div>
 					</div>
 				</div>
@@ -84,7 +84,7 @@
 				<div class="fittobox">
 					<iframe src="https://player.vimeo.com/video/231487647" width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 				</div>
-				<div><i class="fa fa-download fa-4x" aria-hidden="true"></i></div>
+				<!--<div><i class="fa fa-download fa-4x" aria-hidden="true"></i></div>-->
 			</div>
 		</section>	
 		<section id="contact">
