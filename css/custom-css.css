@@ -2,6 +2,11 @@
   font-family: 'Avenir';
   src: url('AvenirLTStd-Light.otf'); /* File to be stored at your site */
   }
+/************
+NAVBAR
+************/
+
+
 
 /************
 HOME
@@ -171,6 +176,10 @@ div#portfolio-container{
 .dl-icon{
 	float:left;
 	margin-right:15px;
+	color:white;
+}
+.dl-icon:hover{
+	color:rgb(40, 186, 205);
 }
 
 .dl-title{

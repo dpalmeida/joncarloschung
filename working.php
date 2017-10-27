@@ -10,8 +10,42 @@
 
     <title>Jon Chung</title>
 
-	<?php include "./includes/headcss.php";?>
-	<?php include "./includes/footjs.php";?>
+	<!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+	<!-- AOS CSS -->
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+	<!-- Onepage CSS -->
+	<!--<link href="../vendor/onepage-scroll-master/onepage-scroll.css" rel="stylesheet">-->
+
+	<!-- Theme CSS -->
+	<link href="../css/custom-css.css" rel="stylesheet">
+
+	<!-- Custom Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+	
+	<!-- JavaScript -->
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>	
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	<!-- Plugins -->
+	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+	<!--<script src="../vendor/onepage-scroll-master/jquery.onepage-scroll.js"></script>-->
+	
+	<!-- Theme JavaScript -->
+	<script src="../js/custom.js"></script>
+
 	<?php
 		if (isset($_POST["submit"])) {
 			$name = $_POST['name'];
@@ -88,26 +122,21 @@
 				</div>
 				<div class="row dl-links">
 					<div class="col-md-6 col-sm-12">
-						<div class="dl-icon"><i class="fa fa-download fa-3x" aria-hidden="true"></i></div>
+						<a href="/game/LabyrinthWIN.zip"><div class="dl-icon"><i class="fa fa-download fa-3x" aria-hidden="true"></i></div></a>
 						<div class="dl-title">LABYRINTH</div>
 						<div class="dl-desc">BLANK<span class="dl-programs"> - UNREAL &amp; MAYA 3D</span></div>
 					</div>
 					<div class="col-md-6 col-sm-12">
-						<div class="dl-icon"><i class="fa fa-download fa-3x" aria-hidden="true"></i></div>
+						<a href="/game/SuperCellphoneSim64.zip"><div class="dl-icon"><i class="fa fa-download fa-3x" aria-hidden="true"></i></div></a>
 						<div class="dl-title">SUPER CELLPHONE SIMULATOR 64</div>
 						<div class="dl-desc">LEAD PROGRAMMER<span class="dl-programs"> - UNITY</span></div>
 					</div>
 				</div>				
 				<div class="row dl-links">
 					<div class="col-md-6 col-sm-12">
-						<div class="dl-icon"><i class="fa fa-download fa-3x" aria-hidden="true"></i></div>
+						<a href="/game/Rogue's Quest Web/Rogue's Quest online.html" target="_blank"><div class="dl-icon"><i class="fa fa-download fa-3x" aria-hidden="true"></i></div></a>
 						<div class="dl-title">ROGUE'S QUEST</div>
 						<div class="dl-desc">LEAD PROGRAMMER<span class="dl-programs"> - UNREAL &amp; MAYA 3D</span></div>
-					</div>
-					<div class="col-md-6 col-sm-12">
-						<div class="dl-icon"><i class="fa fa-download fa-3x" aria-hidden="true"></i></div>
-						<div class="dl-title">A CRUEL TWIST OF SHAPE</div>
-						<div class="dl-desc">LEAD DESIGNER<span class="dl-programs"> - GAME MAKER</span></div>
 					</div>
 				</div>
 			</div>
@@ -158,7 +187,8 @@
 			</div>
 		</section>
 	</div>
-	<!-- Theme JavaScript -->
-	<script src="../js/custom.js"></script>
+	
+	<!-- Easing JavaScript -->
+	<script src="../js/ease.js"></script>
 </body>
 </html>
