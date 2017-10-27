@@ -96,10 +96,8 @@
 			<div id="home-container">
 				<div id="name"><img src="./img/name.png"></img></div>
 				<div class="row" id="sub-desc">
-					<div id="desc-container">
-						<img id="home-img" src="img/home_img.jpg">
-						<div class="col" id="desc">Hi, my name is Jon and I'm a game developer and programmer from PA with a B.S. in Emerging Media: Computation. I program in C++, C#, Java, and Python and have made games in Unreal Engine and Unity. In my free time, I enjoy content creation and playing D&amp;D.</div>
-					</div>
+						<div class="col-md-3 col-sm-12"><img id="home-img" src="img/home_img.jpg"></div>
+						<div class="col-md-9" id="desc">Hi, my name is Jon and I'm a game developer and programmer from PA with a B.S. in Emerging Media: Computation. I program in C++, C#, Java, and Python and have made games in Unreal Engine and Unity. In my free time, I enjoy content creation and playing D&amp;D.</div>
 				</div>
 				<div class="row" id="home-nav">
 					<div id="home-nav-container" class="page-scroll">
@@ -142,47 +140,49 @@
 			</div>
 		</section>	
 		<section id="contact">
-			<div class="row" id="contact-content">
-				<div class="offset-md-4 col-md-4 col-sm-12 contact-info">
-					<span id="phone">phone: (267)-885-8652</span><br/>
-					<span id="email">email: <a href="mailto:joncchung@gmail.com">joncchung@gmail.com</a></span><br/>
-					<span id="linkedin">linkedin: <a href="https://www.linkedin.com/in/jonathan-chung-3845a8114/">jonathan-chung-3845a8114/</a></span><br/>
-					<span id="twitter">twitter: @<a href="https://twitter.com/JonCarlosIII">JonCarlosIII</a></span><br/>
+			<div id="contact-container">
+				<div class="row" id="contact-content">
+					<div class="offset-md-4 col-md-4 col-sm-12 contact-info">
+						<span id="phone">phone: (267)-885-8652</span><br/>
+						<span id="email">email: <a href="mailto:joncchung@gmail.com">joncchung@gmail.com</a></span><br/>
+						<span id="linkedin">linkedin: <a href="https://www.linkedin.com/in/jonathan-chung-3845a8114/">jonathan-chung-3845a8114/</a></span><br/>
+						<span id="twitter">twitter: @<a href="https://twitter.com/JonCarlosIII">JonCarlosIII</a></span><br/>
+					</div>
 				</div>
-			</div>
-			<div class="row" id="contact-form">
-				<div class="offset-md-4 col-md-4 col-sm-12">
-					<form class="form-horizontal" role="form" method="post" action="working.php">
-						<div class="form-group">
-							<div class="col-sm-12">
-								<input type="text" class="form-control" id="name" name="name" placeholder="NAME" value="<?php echo htmlspecialchars($_POST['name']); ?>">
-								<?php echo "<p class='text-danger'>$errName</p>";?>
+				<div class="row" id="contact-form">
+					<div class="offset-md-4 col-md-4 col-sm-12">
+						<form class="form-horizontal" role="form" method="post" action="working.php">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input type="text" class="form-control" id="name" name="name" placeholder="NAME" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+									<?php echo "<p class='text-danger'>$errName</p>";?>
+								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-sm-12">
-								<input type="email" class="form-control" id="email" name="email" placeholder="EMAIL" value="<?php echo htmlspecialchars($_POST['email']); ?>">
-								<?php echo "<p class='text-danger'>$errEmail</p>";?>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input type="email" class="form-control" id="email" name="email" placeholder="EMAIL" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+									<?php echo "<p class='text-danger'>$errEmail</p>";?>
+								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-sm-12">
-								<textarea class="form-control" rows="4" name="message" placeholder="MESSAGE"><?php echo htmlspecialchars($_POST['message']);?></textarea>
-								<?php echo "<p class='text-danger'>$errMessage</p>";?>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<textarea class="form-control" rows="4" name="message" placeholder="MESSAGE"><?php echo htmlspecialchars($_POST['message']);?></textarea>
+									<?php echo "<p class='text-danger'>$errMessage</p>";?>
+								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-sm-12">
-								<input type="text" class="form-control" id="human" name="human" placeholder="Anti-bot: 2 + 3 = ?">
-								<?php echo "<p class='text-danger'>$errHuman</p>";?>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input type="text" class="form-control" id="human" name="human" placeholder="Anti-bot: 2 + 3 = ?">
+									<?php echo "<p class='text-danger'>$errHuman</p>";?>
+								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-sm-12">
-								 <div class="btn btn-primary custom-btn" id="submit" name="submit" type="submit"></div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									 <input class="btn btn-primary custom-btn" id="submit" type="submit" value></input>
+								</div>
 							</div>
-						</div>
-					</form> 
+						</form> 
+					</div>
 				</div>
 			</div>
 		</section>
