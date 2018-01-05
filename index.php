@@ -29,6 +29,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
 	
+	<link href="favicon.ico" rel="icon" type="image/x-icon" />
+	
 	<!-- JavaScript -->
 	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -53,7 +55,7 @@
 			$message = $_POST['message'];
 			$human = intval($_POST['human']);
 			$from = 'joncarloschung.com Contact Form'; 
-			$to = 'dylan.p.almeida@gmail.com'; 
+			$to = 'joncchung@gmail.com'; 
 			$subject = 'Message from: '.$name;
 			
 			$body = "\n From: $name\n Email: $email\n Message:\n $message";
@@ -115,9 +117,12 @@
 				<div id="resumebtn-div">
 					<a href="./docs/resume.pdf"><button class="btn btn-primary custom-btn" type="button" aria-haspopup="true" id="resumebtn">RESUME</button></a>
 				</div>
-				<div class="fittobox">
-					<iframe src="https://player.vimeo.com/video/231487647" width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				<div>
+					<img src="./img/reel-bg.png" style="Width:100%">
 				</div>
+<!--				<div class="fittobox">
+					<iframe width="1920" height="1080" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>-->
 				<div class="row dl-links">
 					<div class="col-md-6 col-sm-12">
 						<a href="/game/LabyrinthWIN.zip"><div class="dl-icon"><i class="fa fa-download fa-3x" aria-hidden="true"></i></div></a>
@@ -142,7 +147,7 @@
 		<section id="contact">
 			<div id="contact-container">
 				<div class="row" id="contact-content">
-					<div class="offset-md-4 col-md-4 col-sm-12 contact-info">
+					<div class="offset-lg-4 col-lg-4 offset-md-3 col-md-6 col-sm-12 contact-info">
 						<span id="phone">phone: (267)-885-8652</span><br/>
 						<span id="email">email: <a href="mailto:joncchung@gmail.com">joncchung@gmail.com</a></span><br/>
 						<span id="linkedin">linkedin: <a href="https://www.linkedin.com/in/jonathan-chung-3845a8114/">jonathan-chung-3845a8114/</a></span><br/>
@@ -150,7 +155,7 @@
 					</div>
 				</div>
 				<div class="row" id="contact-form">
-					<div class="offset-md-4 col-md-4 col-sm-12">
+					<div class="offset-lg-4 col-lg-4 offset-md-3 col-md-6 col-sm-12">
 						<form class="form-horizontal" role="form" method="post" action="working.php">
 							<div class="form-group">
 								<div class="col-sm-12">
@@ -186,6 +191,23 @@
 				</div>
 			</div>
 		</section>
+		<footer class="text-center">
+			<div class="footer-below">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							&copy; Jon Chung <?php echo date("Y"); ?>
+							<br/>
+							<span class="design-credit">
+								Designed by <a href="http://www.gnechevarria.com" target="_blank" class="design-credit">Gina Echevarria</a>
+								<br/>
+								Web Development by <a href="http://www.dylanalmeida.com" target="_blank" class="design-credit">Dylan Almeida</a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</div>
 	
 	<!-- Easing JavaScript -->

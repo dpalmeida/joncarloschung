@@ -254,3 +254,19 @@ div.contact-info{
 
 span > a:link, span > a:visited { color:#ffffff; text-decoration: none; }
 span > a:hover, span > a:active { color:#ffffff; text-decoration: underline; }
+/************
+CONTACT
+************/
+
+footer .footer-below {
+    padding: 10px 0;
+    background-color: #000;
+	color: #fff;
+}
+
+.design-credit{
+	font-size:12px;
+}
+
+a.design-credit:link, a.design-credit:visited { color:#28BACD; text-decoration: none; }
+a.design-credit:hover, a.design-credit:active { color:#28BACD; text-decoration: underline; }
